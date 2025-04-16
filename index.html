@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enter Your Name</title>
+  <script>
+    function verifyName() {
+      const name = document.getElementById('nameInput').value.trim().toLowerCase();
+      if (name === 'martha') {
+        window.location.href = 'congratulations.html';
+      } else {
+        window.location.href = 'sorry.html';
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Enter your name to see if you won:</h2>
+  <input type="text" id="nameInput" placeholder="Your name">
+  <button onclick="verifyName()">Submit</button>
+</body>
+</html>
